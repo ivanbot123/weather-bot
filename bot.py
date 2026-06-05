@@ -2,8 +2,8 @@ import requests
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
-API_KEY = "YOUR_OPENWEATHER_KEY"
+TOKEN = "8580691804:AAFQV9lKoMMVBdnV5FxCw3yjhCTCxnwJcSM"
+API_KEY = "785d29e86d51b9673548b5f2ff798481"
 
 CITY = "Novoyavorivsk"
 
