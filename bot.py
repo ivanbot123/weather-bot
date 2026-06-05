@@ -44,19 +44,20 @@ def get_rain():
 
 # 🤖 Команди
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        "Привіт 😎\n\n/weather - погода\n/rain - дощ"
-    )
+    if update.message:
+        await update.message.reply_text(
+            "Привіт 😎\n\n/weather - погода\n/rain - дощ"
+        )
 
 
 async def weather_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(get_weather())
+    if update.message:
+        await update.message.reply_text(get_weather())
 
 
 async def rain_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(get_rain())
-
-
+    if update.message:
+        await update.message.reply_text(get_rain())
 # 🚀 Запуск
 def main():
     app = Application.builder().token(TOKEN).build()
