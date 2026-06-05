@@ -23,4 +23,5 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("weather", w))
 
 print("Bot running")
-app.run_polling()
+if __name__ == "__main__":
+    app.run_polling()
