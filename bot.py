@@ -482,4 +482,5 @@ def format_current_weather(user_data: Dict, weather: Dict) -> str:
         f"💧 <b>Вологість:</b> {weather.get('humidity')}%\n"
         f"🌬 <b>Вітер:</b> {weather.get('wind_speed')} км/год\n"
         f"🧭 <b>Напрям вітру:</b> {direction} ({weather.get('wind_direction_deg')}°)\n"
-        f"🧪 <b>Тиск:</b> {weather.get('pressure')} гПа
+        f"🧪 <b>Тиск:</b> {weather.get('pressure')} гПа\n"
+    )
